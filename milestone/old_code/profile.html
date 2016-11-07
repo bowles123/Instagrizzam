@@ -1,0 +1,84 @@
+<!Doctype html>
+<html class="SM-html">
+<head>
+  <meta name="charset" content="utf-8"/>
+  <meta name="description" content="CS2610 Project"/>
+  <link href="css/stylesheet.css" rel="stylesheet" type="text/css"/>
+  <link href="css/morty.css" rel="stylesheet" type="text/css"/>
+  <title>Profile</title>
+  <script src="js/myScript.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="navbarbackground"></div>
+    <div class="later">
+      <a href="dashboard.html">
+      <img src="images/later.png">
+      </a>
+    </div>
+
+    <div id="banner"></div>
+    <div class="homeButton">
+      <a href="home.html">
+        <img src="images/homeButton.png" onmouseover="this.src='images/homeButton2.png'" onmouseout="this.src='images/homeButton.png'"
+      </a>
+    </div>
+
+    <div class="magnifyingGlass">
+      <a href="search.html">
+        <img src="images/magnifyingGlass.png" onmouseover="this.src='images/magnifyingGlass2.png'" onmouseout="this.src='images/magnifyingGlass.png'">
+      </a>
+    </div>
+
+    <div class="profile">
+      <a href="profile.html">
+        <img src="images/profile3Red.png" onmouseover="this.src='images/profileButton2.png'" onmouseout="this.src='images/profile3Red.png'">
+      </a>
+    </div>
+
+    <div class="settings">
+      <img src="images/settings.png" onmouseover="this.src='images/settings2.png'" onmouseout="this.src='images/settings.png'">
+    </div>
+
+    <div id="title">
+      <img src="images/profile.png">
+    </div>
+  </div>
+
+
+
+
+  <div class="SM-profileImage"><img src="images/profileButton2.png" alt="Profile picture."> </div>
+  <div class="SM-userName">
+  <h1>[User Name]</h1>
+  </div>
+
+  <form  name="SM-myForm" class="SM-form" onsubmit="return validateForm()" method="post" action="dashboard.html">
+      <fieldset>
+          <div class="SM-div">
+              <label for="name"><b class="SM-bold">*Username:</b></label>
+              <input class="SM-info" name="SM-mForm" type="text" placeholder="Username">
+          </div>
+
+          <div class="SM-div">
+              <label for="email"><b class="SM-bold">*Email Address:</b></label>
+              <input class="SM-info" name="SM-mForm" type="text" placeholder="Email Address">
+          </div>
+
+          <div class="SM-div">
+              <label for="bio"><b class="SM-bold">*Bio:</b></label>
+              <input class="SM-bio" name="SM-mForm" type="text" placeholder="Bio">
+          </div>
+
+          <div class="SM-div">
+            <a href="dashboard.html">
+              <button type="submit" class="SM-controls"><b class="SM-bold">Submit</b></button>
+            </a>
+          </div>
+      </fieldset>
+  </form>
+
+</body>
+<footer></footer>
+</html>

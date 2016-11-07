@@ -1,0 +1,32 @@
+<div id="title">
+  <img src="images/saved_searches.png">
+</div>
+
+<div class="jr-wrap">
+  <div class="jr-content">
+    <div class= "jr-squeeze">
+
+      {{#if user.savedSearches}}
+        {{#each user.savedSearches}}
+        <div class = "jr-btn-3">
+          <form class="inline-form" action="/search" method="post">
+            <input type="hidden" name="query" value="{{this}}">
+            <button type="submit">#{{this}}</button>
+          </form>
+          <form class="inline-form" action="/savedSearches/remove" method="post">
+            <input type="hidden" name="savedSearch" value="{{this}}">
+            <button type="submit">Delete</button>
+          </form>
+        </div>
+        {{/each}}
+      {{/if}}
+
+      <div class="jr-btn-3">
+        <a href = "/search"> Added New Saved Search Or Search Instagram </a>
+      </div>
+
+      <p><br/>&nbsp;</p>
+      <p><br/>&nbsp;</p>
+    </div>
+  </div>
+</div>

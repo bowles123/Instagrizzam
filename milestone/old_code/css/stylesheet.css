@@ -1,0 +1,412 @@
+/*------------------------------------*\
+              ¡GENERAL
+\*------------------------------------*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url("backgroundImage/bg.jpg");
+  font-family: sans-serif;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  width: auto;
+}
+
+.jr-squeeze {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 2px;
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+}
+
+/*------------------------------------*\
+            Header//Navbar
+\*------------------------------------*/
+div.navbarbackground{
+  background-color: #8a8888;
+  position: fixed;
+  width: 150%;
+  height: 50px;
+  margin-left: -10%;
+  margin-right: -20%;
+  top: 0px;
+  z-index: 90;
+}
+
+div.later img{
+  height: 50px;
+  left: 0px;
+  top: 0px;
+  position: fixed;
+  z-index: 100;
+  margin: 0px;
+}
+
+div.homeButton img{
+   height: 30px;
+   width: 30px;
+   right: 145px;
+   top: 10px;
+   position: fixed;
+   z-index: 100;
+}
+
+div.profile img{
+  height: 30px;
+  width: 30px;
+  right: 105px;
+  top: 10px;
+  position: fixed;
+  z-index: 100;
+}
+
+div.magnifyingGlass img{
+  height: 30px;
+  width: 30px;
+  right: 65px;
+  top: 10px;
+  position: fixed;
+  z-index: 100;
+}
+
+div.settings img{
+  height: 30px;
+  width: 30px;
+  right: 25px;
+  top: 10px;
+  position: fixed;
+  z-index: 100;
+}
+
+.arrow-up{
+  position: fixed;
+  right: 31.25px;
+  top: 50px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #8a8888;
+}
+
+.dropdown{
+  position: fixed;
+  top: 60px;
+  right: .5%;
+  z-index: 100;
+  list-style-type: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  z-index: 100;
+
+}
+
+.dropdown li {
+  padding: 8px 30px 15px 15px;
+  border-bottom: 1px solid black;
+  font-family: Helvetica,Arial;
+  color: black;
+  font-size: 15px;
+  background: #fff;
+  box-shadow: 3px 3px 8px gray;
+  z-index: 99;
+}
+
+.dropdown li a{
+  text-decoration: none;
+  list-style: none;
+}
+
+.dropdown li:nth-child(1){
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.dropdown li:last-child{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom: none;
+}
+
+.dropdown li a:visited{
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown li a:hover{
+  color: red;
+}
+
+/*Title of each webpage*/
+#title{
+  text-align: center;
+  position: fixed;
+  height: 50px;
+  top: 0px;
+  z-index: 99;
+  width: 100%;
+  font-size: 22px;
+  color: black;
+  padding: auto;
+  font-family: monospace;
+}
+
+
+/*------------------------------------*\
+                ¡BOX
+\*------------------------------------*/
+.box-wrap {
+  margin: 50px 0;
+}
+
+.box {
+  width: 32%;
+  float: left;
+  padding: 15px;
+  box-shadow: 2px 2px 5px gray;
+  background-color: white;
+}
+  .box:nth-child(-n+3) {
+    margin-top: 45px;
+  }
+
+  .box:nth-child(n) {
+    margin-bottom: 5%;
+    margin-right: 2%;
+  }
+  .box:nth-child(3n) {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .box img {
+    display: block;
+    margin: 0 0 15px;
+    width: 100%;
+    border: solid 1px black;
+  }
+
+.pull--right {
+  float: right;
+}
+
+.pull--left {
+  float: left;
+}
+
+/*.header{
+  display: none;
+}*/
+
+  /*------------------------------------*\
+              ¡BUTTONS
+\*------------------------------------*/
+.btn {
+  background: #FFF;
+  border: solid 2px black;
+  height: 25px;
+  text-align: center;
+  width: 75px;
+
+}
+
+
+/*------------------------------------*\
+              Login page CSS
+\*------------------------------------*/
+
+
+.bb-button{
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: auto;
+	width: 60px;
+	height: 25px;
+	background-color: #D3D3D3;
+	padding-top: 2px;
+	text-decoration: none;
+	color: black;
+}
+
+.bb-h2{
+	color: red;
+}
+
+.bb-wrapper{
+	position: absolute;
+	text-align: center;
+	left: 50%;
+	top: 50%;
+	height: 120px;
+	margin-top: -60px;
+	margin-left: -115px;
+
+}
+
+#login{
+	position: relative;
+	margin-right: 5px;
+}
+
+#signup{
+	margin-left: 5px;
+}
+
+.bb-p{
+	font-family: Courier;
+	font-style: Italic;
+}
+
+/*------------------------------------*\
+-            Search Page
+\*------------------------------------*/
+
+.content-inner {
+  margin: 20px 0;
+  padding: 50px;
+}
+
+.jr-squeeze {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+}
+
+.search-input {
+  padding: 15px 200px 15px 15px;
+  border: 1px solid #CCC;
+  box-shadow: 2px 2px 5px gray;
+}
+
+.search {
+  padding: 15px;
+  border: 1px solid #CCC;
+  box-shadow: 2px 2px 5px gray;
+  background-color: #FFF;
+}
+
+.jr-btn-2{
+  float: right;
+  background: #FFF;
+  border:  1px solid #ccc;
+  box-shadow: 2px 2px 5px gray;
+  height: 45px;
+  text-align: center;
+  width: 175px;
+  margin-top: -45px;
+  padding: 15px 0 0px 0;
+}
+
+div a:visited{
+  text-decoration: none;
+  color: black;
+}
+
+div a{
+  text-decoration: none;
+}
+
+/*------------------------------------*\
+-         Saved  Search Page
+\*------------------------------------*/
+
+.jr-btn-3{
+  position: relative;
+  float: left;
+  background: #FFF;
+  border:  1px solid #ccc;
+  box-shadow: 2px 2px 5px gray;
+  height: 45px;
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+  padding: 15px 0 0px 0;
+  margin-right: px;
+}
+
+.jr-btn-3:nth-child(1){
+  margin-top: 100px;
+}
+
+/*------------------------------------*\
+-         Morty's CSS
+\*------------------------------------*/
+.SM-profileImage {
+  position: relative;
+  width: 360px;
+  margin: 5% auto 0;
+}
+
+.SM-userName {
+  position: relative;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.SM-form {
+  position: relative;
+  width: 35%;
+  padding: 5px;
+  margin:1% auto;
+}
+
+fieldset {
+    border: 0px solid;
+    padding: 0px 23% 0px 0px;
+}
+
+.SM-div {
+  text-align: right;
+}
+
+.SM-info {
+  height: 30px;
+  width: 200px;
+  border: solid 2px black;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.SM-bio {
+  height: 100px;
+  width: 200px;
+  border: solid 2px black;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.SM-controls {
+  border: solid 2px black;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+
+}
+
+.SM-controls {
+  background-color: transparent;
+  height: 50px;
+  width: 100px;
+
+}
+
+.SM-bold {
+  font-size: 20px;
+}

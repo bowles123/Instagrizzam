@@ -1,0 +1,49 @@
+<div id="title">
+  <img src="images/profile.png">
+</div>
+{{#each userInfo}}
+<div class="SM-profileImage"><img src="{{user.profile_picture}}" alt=""> </div>
+
+<div class="SM-userName">
+  <h1>{{this.user.username}}</h1>
+</div>
+{{/each}}
+
+<div class = "SM-form">
+  <img src="{{userInfo.profile_picture}}" alt="images/profileButton2.png" height = "250px" width = "250px"/>
+
+  <form class="" action="/profile" method="post">
+    <input type="hidden" name="_id" value="{{userInfo._id}}">
+    <p>
+      <input type="text" name="username" value="" placeholder = "Update Username">
+    </p>
+
+    <p>
+      <input type="text" name="fullName" value="" placeholder = "Update Full Name">
+    </p>
+
+    <p>
+      <input type="text" name="website" value="" placeholder = "Update Website">
+    </p>
+
+    <p class="">
+      <input class = "SM-bio" type="text" name="biography" value="" placeholder = "Update User Bio">
+    </p>
+
+    <p class="">
+      <button type="submit">Update</button>
+    </p>
+  </form>
+
+  <p class="SM-form">
+    <h3>Username: {{userInfo.username}}</h3>
+  </p>
+
+  <p class="SM-form">
+    <h3>Bio: {{userInfo.bio}}</h3>
+  </p>
+
+  <p class = "SM-form">
+    <h3>Website: <a href = "http://{{userInfo.website}}"> {{userInfo.website}} </a> </h3>
+  </p>
+</div>

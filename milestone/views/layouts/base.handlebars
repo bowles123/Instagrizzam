@@ -1,0 +1,51 @@
+<!Doctype html>
+<html>
+  <head>
+    <meta name="charset" content="utf-8"/>
+    <meta name="description" content="CS2610 Project"/>
+    <link href="/css/stylesheet.css" rel="stylesheet" type="text/css"/>
+    <title>Instagrizzam</title>
+    <script src="/js/myScript.js"></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="navbarbackground"></div>
+      <div class="later">
+        <a href="/dashboard">
+        <img src="images/later.png">
+        </a>
+      </div>
+
+      <div id="banner"></div>
+
+      <div class="magnifyingGlass">
+        <a href="/search">
+          <img src="images/magnifyingGlass.png" onmouseover="this.src='images/magnifyingGlass2.png'" onmouseout="this.src='images/magnifyingGlass.png'">
+        </a>
+      </div>
+
+      <div class="profile">
+        <a href="/profile">
+          <img src="images/profileButton.png" onmouseover="this.src='images/profileButton2.png'" onmouseout="this.src='images/profileButton.png'">
+        </a>
+      </div>
+
+      <div class="settings">
+        <img src="images/settings.png" onmouseover="this.src='images/settings2.png'" onmouseout="this.src='images/settings.png'">
+      </div>
+
+      <div class="dropdown">
+        <div class="arrow-up"></div>
+        <ul class="dropdown">
+          <li>Welcome, <a href="/profile">"{{Username}}"</a></li>
+          <li><a href="/savedSearches">Saved Searches</a></li>
+          <li><a href="/">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+
+  {{{body}}}
+
+  </body>
+</html>

@@ -1,0 +1,68 @@
+.SM-profileImage {
+  position: relative;
+  width: 360px;
+  margin: 5% auto 0;
+}
+
+.SM-userName {
+  position: relative;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.SM-form {
+  position: relative;
+  width: 35%;
+  padding: 5px;
+  margin:1% auto;
+}
+
+fieldset {
+    border: 0px solid;
+    padding: 0px 23% 0px 0px;
+}
+
+.SM-div {
+  text-align: right;
+}
+
+.SM-info {
+  height: 30px;
+  width: 200px;
+  border: solid 2px black;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.SM-bio {
+  height: 100px;
+  width: 200px;
+  border: solid 2px black;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.SM-controls {
+  border: solid 2px black;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+
+}
+
+.SM-controls {
+  background-color: transparent;
+  height: 50px;
+  width: 100px;
+
+}
+
+.SM-bold {
+  font-size: 20px;
+}
+
+.SM-html {
+  overflow-y: hidden;
+}
